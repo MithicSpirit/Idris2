@@ -566,6 +566,11 @@ public export
 minimum : Ord a => (xs : List a) -> {auto 0 _ : NonEmpty xs} -> a
 minimum (x :: xs) = foldl min x xs
 
+||| Computes the maximum of a non-empty list
+public export
+maximum : Ord a => (xs : List a) -> {auto 0 _ : NonEmpty xs} -> a
+maximum (x :: xs) = foldl max x xs
+
 ||| Attempt to deconstruct the list into a head and a tail.
 public export
 uncons' : List a -> Maybe (a, List a)
