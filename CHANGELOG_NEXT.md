@@ -88,6 +88,7 @@ should target this file (`CHANGELOG_NEXT`).
   versions, causing builds targeting PowerPC to fail (#3662).  For these
   systems, the compiler will now use `posix_memalign`.
 * Fix missing support for sized, signed integers in FFI.
+* Fix headers for numeric negation.
 
 ### Library changes
 
