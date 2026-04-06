@@ -89,6 +89,8 @@ should target this file (`CHANGELOG_NEXT`).
   systems, the compiler will now use `posix_memalign`.
 * Fix missing support for sized, signed integers in FFI.
 * Fix headers for numeric negation.
+* Prefix RefC Idris values with `Idris2_` to prevent name collisions with third
+  partly libraries.
 
 ### Library changes
 
